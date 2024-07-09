@@ -3,6 +3,7 @@ import EstiloGlobal, { Container } from './styles'
 import store from './store'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './pages/Home'
+import Cadastro from './pages/Cadastro'
 
 function App() {
   const rotas = createBrowserRouter([
@@ -12,7 +13,7 @@ function App() {
     },
     {
       path: '/novo',
-      element: <h1>Nova tarefa</h1>
+      element: <Cadastro />
     }
   ])
   return (
